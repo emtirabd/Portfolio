@@ -126,3 +126,27 @@ nav .btn-contact:active {
     background-position: right bottom;
   }
 }
+
+main .presentation {
+  margin: 100px;
+}
+main .presentation-txt p {
+  margin: 0;
+  font-size: 2.5rem;
+}
+main .presentation-txt h1 {
+  margin: 15px 0;
+  font-size: 5rem;
+  color: #70B8FF;
+}
+main .presentation-logo {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+main .presentation-logo i {
+  font-size: 2.5rem;
+  color: #70B8FF;
+}

@@ -108,4 +108,29 @@ h1, h2, h3, h4, h5, h6 {
     }
     }
   
+    main {
+      .presentation {
+        margin: 100px;
+        &-txt{
+          p{
+            margin: 0;
+            font-size: 2.5rem;
+          }
+          h1 {
+            margin: 15px 0;
+            font-size: 5rem;
+            color: #70B8FF;
+          }
+        }
+        &-logo {
+          margin-top: 30px;
+          display: flex;
+          gap: 30px;
+          i {
+            font-size: 2.5rem;
+            color:#70B8FF ;
+          }
+        }
+      }
+    }
   
