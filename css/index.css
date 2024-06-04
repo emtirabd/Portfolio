@@ -1,0 +1,128 @@
+html, body {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: -webkit-gradient(linear, right top, left top, from(#0d1520), to(#0D2847));
+  background: linear-gradient(to left, #0d1520, #0D2847);
+  height: 100%;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  width: 70%;
+  background-color: #111927;
+  height: 70px;
+  border: 1.5px solid #205D9E;
+  border-radius: 45px;
+  margin: 20px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav p {
+  margin: 0;
+  padding-left: 50px;
+  height: 100%;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+}
+nav .nav-link {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+nav .nav-link a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 45px;
+  position: relative;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+nav .nav-link a:link, nav .nav-link a:visited {
+  color: white;
+}
+nav .nav-link a:hover, nav .nav-link a.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+nav .btn-contact {
+  margin-right: 10px;
+  padding: 15px 50px;
+  border-radius: 45px;
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#004074), to(#2870BD));
+  background: linear-gradient(to bottom, #004074, #2870BD);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  -webkit-animation: button-shimmer 2s infinite;
+          animation: button-shimmer 2s infinite;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+nav .btn-contact:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+  -webkit-animation: button-particles 1s ease-in-out infinite;
+          animation: button-particles 1s ease-in-out infinite;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+nav .btn-contact:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+@-webkit-keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+@-webkit-keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}

@@ -1,0 +1,111 @@
+html, body {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: linear-gradient(to left, #0d1520, #0D2847);
+  height: 100%;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+  
+  nav {
+    width: 70%;
+    background-color: #111927;
+    height: 70px;
+    border: 1.5px solid #205D9E;
+    border-radius: 45px;
+    margin: 20px auto 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+      p {
+        margin: 0;
+        padding-left: 50px;
+        height: 100%;
+        font-family: "Permanent Marker", cursive;
+        font-size: 40px;
+      }
+    
+    
+    .nav-link {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+    
+      a {
+        text-decoration: none;
+        font-weight: 600; 
+        padding: 15px 30px;
+        border-radius: 45px;
+        position: relative;
+        transition: background 0.3s ease;
+
+        &:link,
+        &:visited {
+          color: white; 
+        }
+
+        &:hover,
+        &.active {
+          background: rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+    .btn-contact {
+      margin-right: 10px;
+      padding: 15px 50px;
+      border-radius: 45px;
+      font-size: 20px;
+      background: linear-gradient(to bottom, #004074, #2870BD);
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: button-shimmer 2s infinite;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        filter: brightness(1.3);
+        animation: button-particles 1s ease-in-out infinite;
+        transform: translateY(-2px);
+      }
+    
+      // Click animation
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    
+    // Shimmer animation
+    @keyframes button-shimmer {
+      0% {
+        background-position: left top;
+      }
+    
+      100% {
+        background-position: right bottom;
+      }
+    }
+    
+    // Particle animation
+    @keyframes button-particles {
+      0% {
+        background-position: left top;
+      }
+    
+      100% {
+        background-position: right bottom;
+      }
+    }
+    }
+  
+  
