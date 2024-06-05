@@ -1,6 +1,5 @@
 html, body {
-  margin: 0 auto;
-  max-width: 1440px;
+  margin: 0;
   background: -webkit-gradient(linear, right top, left top, from(#0d1520), to(#0D2847));
   background: linear-gradient(to left, #0d1520, #0D2847);
   height: 100%;
@@ -12,9 +11,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 nav {
-  width: 70%;
-  background-color: #111927;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(17, 25, 39, 0.45);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(17, 25, 39, 0.3);
   height: 70px;
   border: 1.5px solid #205D9E;
   border-radius: 45px;
@@ -29,16 +44,9 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-nav p {
-  margin: 0;
-  padding-left: 50px;
-  height: 100%;
-  font-family: "Permanent Marker", cursive;
-  font-size: 40px;
-}
 nav .nav-link {
   height: 100%;
-  width: 50%;
+  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +60,8 @@ nav .nav-link {
 nav .nav-link a {
   text-decoration: none;
   font-weight: 600;
-  padding: 15px 30px;
+  padding: 15px 25px;
+  margin-right: 10px;
   border-radius: 45px;
   position: relative;
   -webkit-transition: background 0.3s ease;
@@ -66,7 +75,7 @@ nav .nav-link a:hover, nav .nav-link a.active {
 }
 nav .btn-contact {
   margin-right: 10px;
-  padding: 15px 50px;
+  padding: 15px 30px;
   border-radius: 45px;
   font-size: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#004074), to(#2870BD));
@@ -127,7 +136,12 @@ nav .btn-contact:active {
   }
 }
 
+main {
+  margin-top: 100px;
+}
 main .presentation {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,13 +199,20 @@ main .about .banner-title h2 {
   font-size: 2rem;
 }
 main .about .about-content {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+main .about .about-content img {
+  width: 400px;
+}
+main .about .about-content .about-text {
+  width: 50%;
 }
 main .about .about-content p {
   margin: 0;
