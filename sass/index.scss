@@ -110,7 +110,10 @@ h1, h2, h3, h4, h5, h6 {
   
     main {
       .presentation {
-        margin: 100px;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+
         &-txt{
           p{
             margin: 0;
@@ -129,6 +132,43 @@ h1, h2, h3, h4, h5, h6 {
           i {
             font-size: 2.5rem;
             color:#70B8FF ;
+          }
+        }
+
+        &-picture {
+          border: 1.5px solid #205D9E;
+          width: 40%;
+          border-radius: 50%;
+        }
+      }
+
+      .about {
+        background-color: #004074;
+        
+          
+        .banner-title{
+          background-color: #111927;
+          height: 70px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0px 6px 20px 0px #1c1b1b;
+
+          h2 {
+            margin: 0 ;
+            font-size: 2rem;
+          }
+        }
+
+        .about-content {
+          padding: 80px;
+          display: flex;
+          justify-content: space-between;
+
+          p{
+            margin: 0;
+            
           }
         }
       }
