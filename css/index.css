@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   margin: 0;
   background: -webkit-gradient(linear, right top, left top, from(#0d1520), to(#0D2847));
@@ -216,6 +217,7 @@ main .about .about-content img {
   width: 400px;
 }
 main .about .about-content .about-text {
+  position: relative;
   width: 50%;
   border-left: 2px solid #0090FF;
   border-bottom: 2px solid #0090FF;
@@ -229,6 +231,22 @@ main .about .about-content .about-text {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+main .about .about-content .about-text::before, main .about .about-content .about-text::after {
+  content: "";
+  position: absolute;
+  width: 20px; /* Largeur de la sphère */
+  height: 20px; /* Hauteur de la sphère */
+  border-radius: 50%; /* Pour rendre la forme circulaire */
+  background-color: #0090FF; /* Couleur de la sphère */
+}
+main .about .about-content .about-text::before {
+  top: -5px; /* Décalage vers le haut pour le coin supérieur gauche */
+  left: -10px; /* Décalage vers la gauche pour le coin supérieur gauche */
+}
+main .about .about-content .about-text::after {
+  bottom: -10px; /* Décalage vers le bas pour le coin inférieur droit */
+  right: -5px; /* Décalage vers la droite pour le coin inférieur droit */
 }
 main .about .about-content .about-text p {
   margin: 0 0 0 50px;

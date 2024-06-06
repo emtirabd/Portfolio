@@ -182,6 +182,7 @@ header {
           }
 
           .about-text{
+            position: relative;
             width: 50%;
             border-left: 2px solid #0090FF;
             border-bottom: 2px solid #0090FF;
@@ -189,6 +190,26 @@ header {
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            &::before,
+            &::after {
+              content: '';
+              position: absolute;
+              width: 20px; /* Largeur de la sphère */
+              height: 20px; /* Hauteur de la sphère */
+              border-radius: 50%; /* Pour rendre la forme circulaire */
+              background-color: #0090FF; /* Couleur de la sphère */
+            }
+
+            &::before {
+              top: -5px; /* Décalage vers le haut pour le coin supérieur gauche */
+              left: -10px; /* Décalage vers la gauche pour le coin supérieur gauche */
+            }
+            
+            &::after {
+              bottom: -10px; /* Décalage vers le bas pour le coin inférieur droit */
+              right: -5px; /* Décalage vers la droite pour le coin inférieur droit */
+            }
 
             p {
               margin: 0 0 0 50px;
