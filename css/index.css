@@ -170,6 +170,10 @@ main .presentation-logo i {
   font-size: 2.5rem;
   color: #70B8FF;
 }
+main .presentation-logo i:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
 main .presentation-picture {
   border: 1.5px solid #205D9E;
   width: 40%;
@@ -213,7 +217,99 @@ main .about .about-content img {
 }
 main .about .about-content .about-text {
   width: 50%;
+  border-left: 2px solid #0090FF;
+  border-bottom: 2px solid #0090FF;
+  -webkit-box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
-main .about .about-content p {
-  margin: 0;
+main .about .about-content .about-text p {
+  margin: 0 0 0 50px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+main .about .about-content .about-text p span {
+  color: #0090FF;
+  font-weight: bold;
+}
+main .about .about-content .about-text .waving-hand {
+  font-size: 2.5rem;
+}
+main .about .about-content .about-text .btn-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+main .about .about-content .about-text .cv {
+  width: 20%;
+  margin: 20px 0 30px 50px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0090FF), to(#70B8FF));
+  background: linear-gradient(to bottom, #0090FF, #70B8FF);
+  color: #0D2847;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  -webkit-animation: button-shimmer 2s infinite;
+          animation: button-shimmer 2s infinite;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+main .about .about-content .about-text .cv:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+  -webkit-animation: button-particles 1s ease-in-out infinite;
+          animation: button-particles 1s ease-in-out infinite;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+main .about .about-content .about-text .cv:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+main .about .about-content .about-text .cv i {
+  color: #0D2847;
+  font-size: 1.5rem;
+}
+main .about .about-content .about-text .location {
+  margin: 27px 0 35px 0;
+  padding: 10px 50px 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background: #aac8e7;
+  color: #0D2847;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
 }
