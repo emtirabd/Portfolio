@@ -23,8 +23,8 @@ header {
     background: rgba(17, 25, 39, 0.45);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.5px);
-    -webkit-backdrop-filter: blur(9.5px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     border: 1px solid rgba(17, 25, 39, 0.3);
     height: 70px;
     border: 1.5px solid #205D9E;
@@ -176,14 +176,45 @@ header {
           padding: 80px;
           display: flex;
           justify-content: space-around;
+          position: relative;
+          perspective: 1000px;
 
           img {
-            width: 400px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50px;
+            height: auto; /* Maintenir le ratio de l'image */
+            transform: translateY(-10px); /* Légèrement au-dessus de sa position normale */
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Ombre pour donner l'effet de flottement */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+            transform: rotateX(5deg) rotateY(5deg) translateY(-10px);
+            animation: floating 2s ease-in-out infinite alternate;
+
+      @keyframes floating {
+        0% {
+          transform: rotateX(0deg) rotateY(5deg) translateY(-10px);
+        }
+        100% {
+          transform: rotateX(0deg) rotateY(5deg) translateY(-20px);
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1); /* Optionnel: Ajoute une légère lueur */
+        top: 0;
+        left: 0;
+        border-radius: 15px; /* Ajustez pour un effet plus doux */
+        z-index: -1; /* S'assure que cela apparaît derrière l'image */
+      }
           }
 
           .about-text{
             position: relative;
             width: 50%;
+            border-radius: 0 0 0 15px;
             border-left: 2px solid #0090FF;
             border-bottom: 2px solid #0090FF;
             box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
@@ -195,19 +226,19 @@ header {
             &::after {
               content: '';
               position: absolute;
-              width: 20px; /* Largeur de la sphère */
-              height: 20px; /* Hauteur de la sphère */
+              width: 15px; /* Largeur de la sphère */
+              height: 15px; /* Hauteur de la sphère */
               border-radius: 50%; /* Pour rendre la forme circulaire */
               background-color: #0090FF; /* Couleur de la sphère */
             }
 
             &::before {
               top: -5px; /* Décalage vers le haut pour le coin supérieur gauche */
-              left: -10px; /* Décalage vers la gauche pour le coin supérieur gauche */
+              left: -8px; /* Décalage vers la gauche pour le coin supérieur gauche */
             }
             
             &::after {
-              bottom: -10px; /* Décalage vers le bas pour le coin inférieur droit */
+              bottom: -8px; /* Décalage vers le bas pour le coin inférieur droit */
               right: -5px; /* Décalage vers la droite pour le coin inférieur droit */
             }
 
