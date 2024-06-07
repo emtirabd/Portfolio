@@ -24,7 +24,7 @@ nav {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1000;
-  background: rgba(17, 25, 39, 0.45);
+  background: rgba(17, 25, 39, 0.3);
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -180,10 +180,7 @@ main .presentation-picture {
   width: 40%;
   border-radius: 50%;
 }
-main .about {
-  background-color: #004074;
-}
-main .about .banner-title {
+main .banner-title {
   background-color: #111927;
   height: 70px;
   width: 100%;
@@ -199,14 +196,18 @@ main .about .banner-title {
   -webkit-box-shadow: 0px 6px 20px 0px #1c1b1b;
           box-shadow: 0px 6px 20px 0px #1c1b1b;
 }
-main .about .banner-title h2 {
+main .banner-title h2 {
   margin: 0;
   font-size: 2rem;
 }
-main .about .about-content {
+main .about {
+  background: -webkit-gradient(linear, left top, right top, from(#004074), to(#003362));
+  background: linear-gradient(to right, #004074, #003362);
+}
+main .about-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 80px;
+  padding: 110px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +217,7 @@ main .about .about-content {
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
-main .about .about-content img {
+main .about-content img {
   width: 350px;
   height: 350px;
   border-radius: 50px;
@@ -254,7 +255,7 @@ main .about .about-content img {
             transform: rotateX(0deg) rotateY(5deg) translateY(-20px);
   }
 }
-main .about .about-content img::before {
+main .about-content img::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -265,14 +266,14 @@ main .about .about-content img::before {
   border-radius: 15px; /* Ajustez pour un effet plus doux */
   z-index: -1; /* S'assure que cela apparaît derrière l'image */
 }
-main .about .about-content .about-text {
+main .about-content .about-text {
   position: relative;
   width: 50%;
   border-radius: 0 0 0 15px;
   border-left: 2px solid #0090FF;
   border-bottom: 2px solid #0090FF;
-  -webkit-box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) -6px 7px 7px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) -6px 7px 7px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +283,7 @@ main .about .about-content .about-text {
           flex-direction: column;
   gap: 20px;
 }
-main .about .about-content .about-text::before, main .about .about-content .about-text::after {
+main .about-content .about-text::before, main .about-content .about-text::after {
   content: "";
   position: absolute;
   width: 15px; /* Largeur de la sphère */
@@ -290,33 +291,33 @@ main .about .about-content .about-text::before, main .about .about-content .abou
   border-radius: 50%; /* Pour rendre la forme circulaire */
   background-color: #0090FF; /* Couleur de la sphère */
 }
-main .about .about-content .about-text::before {
+main .about-content .about-text::before {
   top: -5px; /* Décalage vers le haut pour le coin supérieur gauche */
   left: -8px; /* Décalage vers la gauche pour le coin supérieur gauche */
 }
-main .about .about-content .about-text::after {
+main .about-content .about-text::after {
   bottom: -8px; /* Décalage vers le bas pour le coin inférieur droit */
   right: -5px; /* Décalage vers la droite pour le coin inférieur droit */
 }
-main .about .about-content .about-text p {
+main .about-content .about-text p {
   margin: 0 0 0 50px;
   font-size: 1.25rem;
   line-height: 1.4;
 }
-main .about .about-content .about-text p span {
+main .about-content .about-text p span {
   color: #0090FF;
   font-weight: bold;
 }
-main .about .about-content .about-text .waving-hand {
+main .about-content .about-text .waving-hand {
   font-size: 2.5rem;
 }
-main .about .about-content .about-text .btn-about {
+main .about-content .about-text .btn-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-main .about .about-content .about-text .cv {
+main .about-content .about-text .cv {
   width: 20%;
   margin: 20px 0 30px 50px;
   padding: 15px 20px;
@@ -345,7 +346,7 @@ main .about .about-content .about-text .cv {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-main .about .about-content .about-text .cv:hover {
+main .about-content .about-text .cv:hover {
   -webkit-filter: brightness(1.3);
           filter: brightness(1.3);
   -webkit-animation: button-particles 1s ease-in-out infinite;
@@ -353,15 +354,15 @@ main .about .about-content .about-text .cv:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
-main .about .about-content .about-text .cv:active {
+main .about-content .about-text .cv:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
-main .about .about-content .about-text .cv i {
+main .about-content .about-text .cv i {
   color: #0D2847;
   font-size: 1.5rem;
 }
-main .about .about-content .about-text .location {
+main .about-content .about-text .location {
   margin: 27px 0 35px 0;
   padding: 10px 50px 10px 20px;
   border-radius: 15px;

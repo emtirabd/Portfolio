@@ -20,7 +20,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    background: rgba(17, 25, 39, 0.45);
+    background: rgba(17, 25, 39, 0.3);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
@@ -152,28 +152,28 @@ header {
         }
       }
 
-      .about {
-        background-color: #004074;
-        
-        .banner-title{
-          background-color: #111927;
-          height: 70px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: 0px 6px 20px 0px #1c1b1b;
+      .banner-title{
+        background-color: #111927;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 6px 20px 0px #1c1b1b;
 
-          h2 {
-            margin: 0 ;
-            font-size: 2rem;
-          }
+        h2 {
+          margin: 0 ;
+          font-size: 2rem;
         }
+      }
 
-        .about-content {
+      .about {
+        background: linear-gradient(to right, #004074, #003362);
+        
+        &-content {
           max-width: 1440px;
           margin: 0 auto;
-          padding: 80px;
+          padding: 110px 80px;
           display: flex;
           justify-content: space-around;
           position: relative;
@@ -217,7 +217,7 @@ header {
             border-radius: 0 0 0 15px;
             border-left: 2px solid #0090FF;
             border-bottom: 2px solid #0090FF;
-            box-shadow: -4px 3px 7px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: rgba(0, 0, 0, 0.2) -6px 7px 7px 0px;
             display: flex;
             flex-direction: column;
             gap: 20px;
