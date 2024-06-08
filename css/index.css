@@ -178,7 +178,10 @@ main .presentation-logo i:hover {
 main .presentation-picture {
   border: 1.5px solid #205D9E;
   width: 40%;
-  border-radius: 50%;
+  border-radius: 190px;
+}
+main .presentation-picture img {
+  border-radius: 190px;
 }
 main .banner-title {
   background-color: #111927;
@@ -207,7 +210,7 @@ main .about {
 main .about-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 110px 80px;
+  padding: 170px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
