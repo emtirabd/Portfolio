@@ -115,29 +115,29 @@ header {
       margin-top: 100px;
       .presentation {
         max-width: 1440px;
-        margin: 0 auto;
-        padding: 100px;
-        display: flex;
-        justify-content: space-between;
+        margin: auto;
+        padding: 150px 100px;
+        text-align: center;
 
         &-txt{
           p{
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 4rem;
           }
           h1 {
             margin: 15px 0;
-            font-size: 5rem;
+            font-size: 6rem;
             color: #70B8FF;
           }
         }
         &-logo {
-          margin-top: 30px;
+          margin-top: 70px;
           display: flex;
+          justify-content: center;
           gap: 30px;
           
           i {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color:#70B8FF ;
             &:hover {
               filter: brightness(1.3);
@@ -145,15 +145,7 @@ header {
           }
         }
 
-        &-picture {
-          border: 1.5px solid #205D9E;
-          width: 40%;
-          border-radius: 190px;
 
-          img {
-            border-radius: 190px;
-          }
-        }
       }
 
       .banner-title{
