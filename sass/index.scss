@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  background: linear-gradient(to left, #0d1520, #0D2847);
+  background-color: #101a28;
   height: 100%;
   color: white;
   font-family: "Noto Sans", sans-serif;
@@ -118,6 +118,43 @@ header {
         margin: auto;
         padding: 150px 100px;
         text-align: center;
+        position: relative;
+
+        .circle-blur {
+          position: absolute;
+          z-index: 0;
+          border-radius: 50%;
+        }
+
+        .circle-1 {
+          height: 400px;
+          width: 400px;
+          top: -50px;
+          left: 0px;
+          background: rgb(12 105 195 / 40%);
+          filter: blur(120px);
+        }
+
+        .circle-2 {
+          height: 300px;
+          width: 300px;
+          top: 60px;
+          right: 445px;
+          background: rgb(12 105 195 / 40%);
+          filter: blur(90px);
+        }
+
+        .circle-3 {
+          height: 600px;
+          width: 600px;
+          bottom: -30px;
+          right: 0;
+          background: rgb(12 105 195 / 50%);
+          filter: blur(100px);
+        }
+
+
+
 
         &-txt{
           p{

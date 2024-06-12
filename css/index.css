@@ -1,8 +1,7 @@
 @charset "UTF-8";
 html, body {
   margin: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#0d1520), to(#0D2847));
-  background: linear-gradient(to left, #0d1520, #0D2847);
+  background-color: #101a28;
   height: 100%;
   color: white;
   font-family: "Noto Sans", sans-serif;
@@ -145,6 +144,39 @@ main .presentation {
   margin: auto;
   padding: 150px 100px;
   text-align: center;
+  position: relative;
+}
+main .presentation .circle-blur {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+main .presentation .circle-1 {
+  height: 400px;
+  width: 400px;
+  top: -50px;
+  left: 0px;
+  background: rgba(12, 105, 195, 0.4);
+  -webkit-filter: blur(120px);
+          filter: blur(120px);
+}
+main .presentation .circle-2 {
+  height: 300px;
+  width: 300px;
+  top: 60px;
+  right: 445px;
+  background: rgba(12, 105, 195, 0.4);
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+main .presentation .circle-3 {
+  height: 600px;
+  width: 600px;
+  bottom: -30px;
+  right: 0;
+  background: rgba(12, 105, 195, 0.5);
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
 }
 main .presentation-txt p {
   margin: 0;
