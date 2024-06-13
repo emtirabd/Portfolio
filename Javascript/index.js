@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const targetElement = document.querySelector(targetId);
 
           if (targetElement) {
-              const offset = 100; // Adjust this value to match navbar height
+              const offset = 30; // Adjust this value to match navbar height
 
               window.scrollTo({
                   top: targetElement.offsetTop - offset,

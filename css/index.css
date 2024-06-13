@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html, body {
   margin: 0;
-  background-color: #070f1a;
+  background-color: #12243d;
   height: 100%;
   color: white;
   font-family: "Noto Sans", sans-serif;
@@ -205,49 +205,31 @@ main .presentation-logo i:hover {
   -webkit-filter: brightness(1.3);
           filter: brightness(1.3);
 }
-main .banner-title {
-  background-color: #111927;
-  height: 70px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 6px 20px 0px #1c1b1b;
-          box-shadow: 0px 6px 20px 0px #1c1b1b;
-}
-main .banner-title h2 {
-  margin: 0;
+main .title {
+  margin-left: 10%;
   font-size: 2rem;
-}
-main .about {
-  background: -webkit-gradient(linear, left top, right top, from(#004074), to(#003362));
-  background: linear-gradient(to right, #004074, #003362);
 }
 main .about-content {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 220px 80px;
+  margin: 100px auto;
+  padding: 180px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  border: 2px solid;
+  border-radius: 25px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(280deg, #28f1fe, #7873f5);
 }
 main .about-content img {
   width: 350px;
   height: 350px;
   border-radius: 50px;
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Ombre pour donner l'effet de flottement */
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 main .about-content .about-text {
   position: relative;
@@ -459,53 +441,71 @@ main .projects .card-container {
           align-items: center;
 }
 main .projects .card-container .card {
-  width: 320px;
-  height: 400px;
-  background: rgb(103, 225, 255);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  position: relative;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-  font-size: 30px;
-  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-box-shadow: 0 0 15px 0 #95B9BD;
+          box-shadow: 0 0 15px 0 #95B9BD;
+  -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main .projects .card-container .card img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 main .projects .card-container .card:hover {
-  border-radius: 15px;
-  cursor: pointer;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
-  background: rgb(103, 151, 255);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
-main .projects .card-container .card .first-content {
-  height: 100%;
+main .projects .card-container .card:hover .card-content {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+main .projects .card-container .card .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  opacity: 1;
-  border-radius: 15px;
-}
-main .projects .card-container .card .first-content:hover {
-  height: 0px;
-  opacity: 0;
-}
-main .projects .card-container .card .second-content {
-  height: 0%;
-  width: 100%;
-  opacity: 0;
-  border-radius: 15px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  font-size: 0px;
-  -webkit-transform: rotate(90deg) scale(-1);
-          transform: rotate(90deg) scale(-1);
-}
-main .projects .card-container .card .second-content:hover {
-  opacity: 1;
   height: 100%;
-  font-size: 1.8rem;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f2f2f2;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main .projects .card-container .card .card-content .card-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+main .projects .card-container .card .card-content .card-description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
 }
