@@ -249,7 +249,7 @@ main .title h2 {
 }
 main .about-content {
   max-width: 1440px;
-  margin: 60px auto 100px auto;
+  margin: 100px 10%;
   padding: 120px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
