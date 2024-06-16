@@ -227,6 +227,8 @@ main .presentation-txt h1 {
   color: #70b8ff;
 }
 main .presentation-logo {
+  position: relative;
+  z-index: 1;
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,6 +827,15 @@ footer p {
     font-size: 1.5rem;
     padding: 15px;
   }
+  main .presentation-txt p {
+    font-size: 7vw;
+  }
+  main .presentation-txt h1 {
+    font-size: 10vw;
+  }
+  main .presentation-logo i {
+    font-size: 9vw;
+  }
   main .title {
     text-align: center;
   }
@@ -841,6 +852,9 @@ footer p {
     width: 100%;
     text-align: center;
     gap: 25px;
+  }
+  main .about-content .about-text p {
+    margin: 0;
   }
   main .about-content .about-text .btn-about {
     -webkit-box-orient: vertical;

@@ -194,6 +194,8 @@ main {
       }
     }
     &-logo {
+      position: relative;
+      z-index: 1;
       margin-top: 70px;
       display: flex;
       justify-content: center;
@@ -717,6 +719,24 @@ footer {
 
 main{
 
+  .presentation {
+    &-txt{
+      p{
+        font-size: 7vw;
+      }
+      h1{
+        font-size: 10vw;
+      }
+
+    }
+
+    &-logo {
+      i {
+        font-size: 9vw;
+      }
+    }
+  }
+
   .title{
     text-align: center;
   }
@@ -728,6 +748,10 @@ main{
     width: 100%;
     text-align: center;
     gap: 25px;
+
+    p{
+      margin: 0;
+    }
 
     .btn-about {
       flex-direction: column;
