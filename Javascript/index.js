@@ -53,3 +53,31 @@ document.addEventListener("DOMContentLoaded", function() {
       addActiveClass(currentSection);
   });
 });
+
+
+//menu burger
+document.querySelector(".menu-icon").addEventListener("click", function() {
+    document.querySelector(".nav-link").classList.toggle("active");
+    this.classList.toggle("change");
+  });
+  
+  document.querySelectorAll(".nav-link a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      document.querySelector(".nav-link").classList.remove("active");
+      document.querySelector(".menu-icon").classList.remove("change");
+    });
+  });
+
+  //ouverture cv 
+  document.getElementById('btn-cv').addEventListener('click', ouvrirCV);
+  
+  function ouvrirCV() {
+    
+    var cheminVersCV = 'assets/images/CV Emtir Abdelkader.pdf';
+    window.open(cheminVersCV, '_blank');
+}
+
+
+
+
+  

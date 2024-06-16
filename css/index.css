@@ -151,6 +151,25 @@ nav .btn-contact:active {
     background-position: right bottom;
   }
 }
+nav .menu-icon {
+  display: none; /* Initialement caché sur les grands écrans */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  margin-right: 10px;
+}
+nav .menu-icon .bar1,
+nav .menu-icon .bar2,
+nav .menu-icon .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
 
 main {
   margin-top: 100px;
@@ -498,22 +517,26 @@ main .about-content .about-text .location {
 main .projects .card-container {
   max-width: 1440px;
   margin: 120px 0 210px;
-  height: 500px;
+  height: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5%;
+  gap: 10%;
 }
 main .projects .card-container .card {
   height: 100%;
   position: relative;
-  width: 28%;
+  width: 50%;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,6 +777,54 @@ footer p {
   }
 }
 @media (max-width: 768px) {
+  nav {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-top: none;
+  }
+  nav .nav-link {
+    display: none; /* Cacher les liens de navigation par défaut */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0b1729;
+    z-index: 999;
+  }
+  nav .nav-link a.active {
+    background: none;
+  }
+  nav .nav-link.active {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Afficher les liens de navigation lorsque le menu est actif */
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .btn-contact {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  nav .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Afficher le menu burger */
+    border-radius: 25px;
+    background-color: rgba(31, 64, 111, 0.8);
+  }
+  nav .menu-icon i {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
   main .title {
     text-align: center;
   }

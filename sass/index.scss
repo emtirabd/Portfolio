@@ -118,6 +118,24 @@ nav {
       background-position: right bottom;
     }
   }
+
+    .menu-icon {
+      display: none; /* Initialement caché sur les grands écrans */
+      flex-direction: column;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  
+    .menu-icon .bar1,
+    .menu-icon .bar2,
+    .menu-icon .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
 }
 
 main {
@@ -332,6 +350,7 @@ main {
         .btn-about {
           display: flex;
           gap: 50px;
+
         }
 
         .cv {
@@ -390,16 +409,17 @@ main {
     .card-container {
       max-width: 1440px;
       margin: 120px 0 210px;
-      height: 500px;
+      height: 1500px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 5%;
+      gap: 10%;
 
       .card {
         height: 100%;
         position: relative;
-        width: 28%;
+        width: 50%;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -649,6 +669,51 @@ footer {
 
 //Responsive 768px
 @media (max-width: 768px) {
+
+  nav {
+    width: 100%;
+    margin: 0;
+    border-radius: 0 ;
+    justify-content: space-around;
+    border-top: none;
+    
+    .nav-link {
+      display: none; /* Cacher les liens de navigation par défaut */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #0b1729;
+      z-index: 999;
+
+      a.active {
+        background: none;
+      }
+    }
+
+    .nav-link.active {
+      height: 200px;
+      display: flex; /* Afficher les liens de navigation lorsque le menu est actif */
+      justify-content: space-around;
+    }
+
+    .btn-contact {
+      order: 2;
+    }
+
+    .menu-icon {
+      display: flex; /* Afficher le menu burger */
+      border-radius: 25px;
+      background-color: rgb(31 64 111 / 80%);
+
+      i{
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+    }
+    
+  }
 
 main{
 
