@@ -727,9 +727,16 @@ main{
   .about-text{
     width: 100%;
     text-align: center;
+    gap: 25px;
 
     .btn-about {
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      
+      gap: 5%;
+      .cv {
+        margin: 0;
+      }
     }
   }  
 
@@ -738,5 +745,4 @@ main{
   }
   }
 }
-  
 }

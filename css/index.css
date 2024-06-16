@@ -840,11 +840,20 @@ footer p {
   main .about-content .about-text {
     width: 100%;
     text-align: center;
+    gap: 25px;
   }
   main .about-content .about-text .btn-about {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5%;
+  }
+  main .about-content .about-text .btn-about .cv {
+    margin: 0;
   }
   main .about-content img {
     margin: 5%;
