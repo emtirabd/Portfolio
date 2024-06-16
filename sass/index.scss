@@ -221,17 +221,17 @@ main {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       display: inline-block;
-      animation: glow-animation 3s infinite;
+      animation: glow-animation 4s infinite;
     }
     @keyframes glow-animation {
       0% {
-        text-shadow: 0 0 5px rgba(40, 241, 254, 0.5); /* Ombre textuelle moins intense */
+        text-shadow: 0 0 5px rgba(40, 241, 254, 0.7); /* Ombre textuelle moins intense */
       }
       50% {
         text-shadow: none; /* Pas d'ombre pour perdre la brillance */
       }
       100% {
-        text-shadow: 0 0 5px rgba(40, 241, 254, 0.5); /* Ombre textuelle moins intense */
+        text-shadow: 0 0 5px rgba(40, 241, 254, 0.7); 
       }
     }
   }
