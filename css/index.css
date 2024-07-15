@@ -160,16 +160,6 @@ nav .menu-icon {
   cursor: pointer;
   margin-right: 10px;
 }
-nav .menu-icon .bar1,
-nav .menu-icon .bar2,
-nav .menu-icon .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
 
 main {
   margin-top: 100px;
@@ -627,7 +617,7 @@ main .projects .card-container .card .card-content .card-title {
   font-weight: 700;
 }
 main .projects .card-container .card .card-content .card-title a:visited {
-  color: #0090FF;
+  color: #0090ff;
 }
 main .projects .card-container .card .card-content .card-title i {
   padding-left: 15px;
@@ -676,10 +666,10 @@ main .skills-container .skills-btn i {
   transition: color 0.3s ease;
 }
 main .skills-container .skills-btn:nth-child(1) {
-  color: #E44D26;
+  color: #e44d26;
 }
 main .skills-container .skills-btn:nth-child(1):hover {
-  background: linear-gradient(135deg, #12243D 0%, rgba(228, 77, 38, 0.5) 100%);
+  background: linear-gradient(135deg, #12243d 0%, rgba(228, 77, 38, 0.5) 100%);
 }
 main .skills-container .skills-btn:nth-child(1):hover i {
   color: rgba(228, 77, 38, 0.5);
@@ -688,25 +678,25 @@ main .skills-container .skills-btn:nth-child(2) {
   color: #ec76d5; /* SASS color */
 }
 main .skills-container .skills-btn:nth-child(2):hover {
-  background: linear-gradient(135deg, #12243D 0%, rgba(236, 118, 213, 0.5) 100%);
+  background: linear-gradient(135deg, #12243d 0%, rgba(236, 118, 213, 0.5) 100%);
 }
 main .skills-container .skills-btn:nth-child(2):hover i {
   color: rgba(236, 118, 213, 0.5);
 }
 main .skills-container .skills-btn:nth-child(3) {
-  color: #FFD43B; /* JS color */
+  color: #ffd43b; /* JS color */
 }
 main .skills-container .skills-btn:nth-child(3):hover {
-  background: linear-gradient(135deg, #12243D 0%, rgba(255, 212, 59, 0.5) 100%);
+  background: linear-gradient(135deg, #12243d 0%, rgba(255, 212, 59, 0.5) 100%);
 }
 main .skills-container .skills-btn:nth-child(3):hover i {
   color: rgba(255, 212, 59, 0.5);
 }
 main .skills-container .skills-btn:nth-child(4) {
-  color: #61DAFB; /* React color */
+  color: #61dafb; /* React color */
 }
 main .skills-container .skills-btn:nth-child(4):hover {
-  background: linear-gradient(135deg, #12243D 0%, rgba(97, 218, 251, 0.5) 100%);
+  background: linear-gradient(135deg, #12243d 0%, rgba(97, 218, 251, 0.5) 100%);
 }
 main .skills-container .skills-btn:nth-child(4):hover i {
   color: rgba(97, 218, 251, 0.5);

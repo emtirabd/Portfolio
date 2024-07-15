@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const navLinks = document.querySelectorAll(".nav-link a");
   const sections = document.querySelectorAll("section");
 
-  // Function to remove 'active' class from all links
-  function removeActiveClass() {
+// Function to remove 'active' class from all links
+function removeActiveClass() {
       navLinks.forEach(link => link.classList.remove("active"));
   }
 
-  // Function to add 'active' class to the link corresponding to the section in view
-  function addActiveClass(sectionId) {
+// Function to add 'active' class to the link corresponding to the section in view
+function addActiveClass(sectionId) {
       navLinks.forEach(link => {
           if (link.getAttribute("href") === `#${sectionId}`) {
               link.classList.add("active");
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 
-  // Smooth scrolling
-  navLinks.forEach(link => {
+// Smooth scrolling
+navLinks.forEach(link => {
       link.addEventListener("click", function(e) {
           e.preventDefault();
 
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 
-  // Scroll event to update active class
-  window.addEventListener("scroll", function() {
+// Scroll event to update active class
+window.addEventListener("scroll", function() {
       let currentSection = "";
 
       sections.forEach(section => {
@@ -68,12 +68,12 @@ document.querySelector(".menu-icon").addEventListener("click", function() {
     });
   });
 
-  //ouverture cv 
-  document.getElementById('btn-cv').addEventListener('click', ouvrirCV);
+//ouverture cv 
+document.getElementById('btn-cv').addEventListener('click', ouvrirCV);
   
   function ouvrirCV() {
     
-    var cheminVersCV = 'assets/images/CV Emtir Abdelkader.pdf';
+    var cheminVersCV = 'assets/images/cv_abdelkader.pdf';
     window.open(cheminVersCV, '_blank');
 }
 
